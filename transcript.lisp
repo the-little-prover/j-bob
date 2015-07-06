@@ -391,7 +391,6 @@
        ((A 1) (if-true 'nil (if (equal (car '()) '?) 't  (memb? (cdr '())))))
        ((A) (equal-same 'nil))
        ((E A 1 1) (remb xs))
-
        ((E A 1 1)
         (if-nest-E (atom xs)
           '()
@@ -502,7 +501,6 @@
        (() (if-same (atom x) 't)))
       ((dethm ctx?/sub (x y)
          (if (ctx? x) (if (ctx? y) (equal (ctx? (sub x y)) 't) 't) 't))
-
        (star-induction y)
        (()
         (if-same (ctx? x)
@@ -555,7 +553,6 @@
        ((A E A A A 1 Q) (atom/cons (sub x (car y)) (sub x (cdr y))))
        ((A E A A A 1 E Q 1) (car/cons (sub x (car y)) (sub x (cdr y))))
        ((A E A A A 1 E E 1) (cdr/cons (sub x (car y)) (sub x (cdr y))))
-
        ((A E A A A 1)
         (if-false (equal (cons (sub x (car y)) (sub x (cdr y))) '?)
           (if (ctx? (sub x (car y))) 't (ctx? (sub x (cdr y))))))
@@ -831,7 +828,6 @@
         (if-nest-A (set? (add-atoms (cdr a) bs))
           (equal (set? (add-atoms (car a) (add-atoms (cdr a) bs))) 't)
           't))
-
        ((E A E Q)
         (if-nest-E (set? (add-atoms (cdr a) bs))
           (equal (set? (add-atoms (car a) (add-atoms (cdr a) bs))) 't)
