@@ -1,5 +1,7 @@
 (load "j-bob.scm")
 
+;; Chapter 1
+
 (defun chapter1.example1 ()
   (J-Bob/step (prelude)
     '(car (cons 'ham '(eggs)))
