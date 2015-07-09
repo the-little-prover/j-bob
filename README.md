@@ -15,7 +15,7 @@ Example of using J-Bob in Scheme, in the `scheme/` subdirectory:
 (load "j-bob.scm")
 ;; Load the transcript of all proofs in the book:
 (load "little-prover.scm")
-;; Run every proof in the book, up to the proof of align/align:
+;; Run every proof in the book, up to and including the proof of align/align:
 (dethm.align/align)
 ```
 
@@ -28,7 +28,7 @@ Example of using J-Bob in ACL2, in the `acl2/` subdirectory:
 (include-book "j-bob")
 ;; Load the transcript of all proofs in the book:
 (include-book "little-prover")
-;; Run every proof in the book, up to the proof of align/align:
+;; Run every proof in the book, up to and including the proof of align/align:
 (dethm.align/align)
 ```
 
@@ -41,6 +41,6 @@ Example of using J-Bob in Racket, using the Dracula package:
 (include-book "j-bob" :dir :teachpacks)
 ;; Load the transcript of all proofs in the book:
 (include-book "little-prover" :dir :teachpacks)
-;; Run every proof in the book, up to the proof of align/align:
+;; Run every proof in the book, up to and including the proof of align/align:
 (dethm.align/align)
 ```
