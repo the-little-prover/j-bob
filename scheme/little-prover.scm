@@ -1,3 +1,4 @@
+(load "j-bob.scm")
 
 (defun chapter1.example1 ()
   (J-Bob/step (prelude)

@@ -1,4 +1,5 @@
 (in-package "ACL2")
+(include-book "j-bob")
 
 ;; Chapter 1
 
