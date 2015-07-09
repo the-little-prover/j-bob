@@ -1,3 +1,4 @@
+(in-package "ACL2")
 
 (defun if->implies (exp hyps)
   (case-match exp
