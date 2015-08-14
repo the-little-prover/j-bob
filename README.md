@@ -53,11 +53,10 @@ dependencies.
 
 If you want to load the Scheme version of J-Bob inside DrRacket, you will need
 to load it in the R5RS language with custom settings:
+
 1. Use the `Language` menu and the `Choose Language ...` option.
 2. In the dialog box that opens, select `Other Languages`.
 3. Under `Legacy Languages` choose `R5RS`.
-4. Select `Show Details` if there is not already a menu on the right of the
-dialog box.
-5. Under `Initial Bindings`, make sure that `Disallow redefinition of initial
-bindings` is *unchecked*.
+4. Select `Show Details` if there is not already a menu on the right of the dialog box.
+5. Under `Initial Bindings`, make sure that `Disallow redefinition of initial bindings` is *unchecked*.
 6. Then click `OK`, and J-Bob should work with those settings.
