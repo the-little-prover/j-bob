@@ -1,4 +1,3 @@
-(load "j-bob-lang.scm")
 
 (defun list0 () '())
 (defun list0? (x) (equal x '()))

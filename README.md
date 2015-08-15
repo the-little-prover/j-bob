@@ -45,10 +45,6 @@ Example of using J-Bob in Racket, using the Dracula package:
 (dethm.align/align)
 ```
 
-In all of the examples above, you only need to load one of the three provided
-files.  Each file loads the one(s) before it, in order to take care of its own
-dependencies.
-
 ---
 
 If you want to load the Scheme version of J-Bob inside DrRacket, you will need

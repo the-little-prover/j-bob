@@ -1,4 +1,3 @@
-(load "j-bob.scm")
 
 ;; Chapter 1
 
