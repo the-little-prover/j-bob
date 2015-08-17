@@ -35,4 +35,4 @@
 (defun size (x)
   (if (atom x)
     '0
-    (+ '1 (size (car x)) (size (cdr x)))))
+    (+ '1 (+ (size (car x)) (size (cdr x))))))
