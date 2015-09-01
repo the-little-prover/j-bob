@@ -12,7 +12,7 @@
 (define (cdr x) (if (pair? x) (s.cdr x) '()))
 (define (equal x y) (if (equal? x y) 't 'nil))
 (define (natp x)
-  (if (integer? x) (if (< x 0) 'nil 't) 'nil))
+  (if (integer? x) (if (s.< x 0) 'nil 't) 'nil))
 (define (+ x y) (s.+ (num x) (num y)))
 (define (< x y)
   (if (s.< (num x) (num y)) 't 'nil))
