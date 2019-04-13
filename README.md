@@ -35,6 +35,7 @@ Example of using J-Bob in ACL2, in the `acl2/` subdirectory:
 Example of using J-Bob in Racket, using the Dracula package:
 
 ```lisp
+#lang dracula
 ;; Load the J-Bob language:
 (include-book "j-bob-lang" :dir :teachpacks)
 ;; Load J-Bob, our little proof assistant:
@@ -56,3 +57,7 @@ to load it in the R5RS language with custom settings:
 4. Select `Show Details` if there is not already a menu on the right of the dialog box.
 5. Under `Initial Bindings`, make sure that `Disallow redefinition of initial bindings` is *unchecked*.
 6. Then click `OK`, and J-Bob should work with those settings.
+
+
+
+
