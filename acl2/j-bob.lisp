@@ -769,7 +769,6 @@
         (cdr pfs)))))
 
 (defun rewrite/define+ (defs pfs)
-  (declare (xargs :measure (size pfs)))
   (if (atom pfs)
     defs
     (rewrite/define+1 defs
