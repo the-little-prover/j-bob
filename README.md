@@ -32,15 +32,15 @@ Example of using J-Bob in ACL2, in the `acl2/` subdirectory:
 (dethm.align/align)
 ```
 
-Example of using J-Bob in Racket, using the Dracula package:
+Example of using J-Bob in Racket, in the `racket/` subdirectory:
 
-```lisp
+```racket
 ;; Load the J-Bob language:
-(include-book "j-bob-lang" :dir :teachpacks)
+(require "j-bob-lang.rkt")
 ;; Load J-Bob, our little proof assistant:
-(include-book "j-bob" :dir :teachpacks)
+(require "j-bob.rkt")
 ;; Load the transcript of all proofs in the book:
-(include-book "little-prover" :dir :teachpacks)
+(require "little-prover.rkt")
 ;; Run every proof in the book, up to and including the proof of align/align:
 (dethm.align/align)
 ```
