@@ -673,6 +673,8 @@
          (add-atoms x '()))
        nil))))
 
+;; Chapter 9
+
 (defun dethm.set?/atoms.attempt ()
   (J-Bob/prove (defun.atoms)
     '(((dethm set?/add-atoms (a)
@@ -870,7 +872,7 @@
        ((A) (equal-same 't))
        (() (if-same (set? '()) 't))))))
 
-;; Chapter 9
+;; Chapter 10
 
 (defun defun.rotate ()
   (J-Bob/define (dethm.set?/atoms)
