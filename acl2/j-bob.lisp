@@ -756,7 +756,6 @@
     defs))
 
 (defun rewrite/define+1 (defs1 defs2 pfs)
-  (declare (xargs :measure (size pfs)))
   (if (equal defs1 defs2)
     defs1
     (if (atom pfs)
