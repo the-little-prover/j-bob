@@ -47,6 +47,8 @@ Example of using J-Bob in Racket, using the Dracula package:
 
 ---
 
+## DrRacket R5RS
+
 If you want to load the Scheme version of J-Bob inside DrRacket, you will need
 to load it in the R5RS language with custom settings:
 
@@ -56,3 +58,26 @@ to load it in the R5RS language with custom settings:
 4. Select `Show Details` if there is not already a menu on the right of the dialog box.
 5. Under `Initial Bindings`, make sure that `Disallow redefinition of initial bindings` is *unchecked*.
 6. Then click `OK`, and J-Bob should work with those settings.
+
+
+## MIT/GNU Scheme
+
+MIT/GNU Scheme 12.1 appears to have a bug that prevents defining a macro with the name `if`,
+which breaks `j-bob/scheme/j-bob-lang.scm`.
+
+Discussed here: https://stackoverflow.com/questions/77957401/why-cant-a-scheme-macro-with-the-name-if-be-defined
+
+Bug report: https://savannah.gnu.org/bugs/?65272
+
+
+## Gambit Scheme
+
+Gambit Scheme v4.9.5 appears to have a bug where redefining `<` causes `syntax-rules` to produce an error,
+which breaks `j-bob/scheme/j-bob-lang.scm`.
+
+Bug report: https://github.com/gambit/gambit/issues/888
+
+Also, a macro definition is not visible outside of its file if the file was loaded by Gambit's version of `load`.
+`include` should be instead.
+
+Documented here: https://gambitscheme.org/latest/manual/#Legacy-Modules
